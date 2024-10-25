@@ -1,0 +1,254 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+*{
+    font-family: "ADLaM Display", system-ui;
+    font-weight: 200;
+    font-style: normal;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    text-align: center;
+}
+
+/* Archivo: custom.css */
+.bg-custom-gradient {
+    background: hsla(233, 24%, 19%, 1);
+
+    background: linear-gradient(135deg, hsla(233, 24%, 19%, 1) 27%, hsla(254, 31%, 27%, 1) 59%, hsla(295, 92%, 24%, 1) 94%);
+
+    background: -moz-linear-gradient(135deg, hsla(233, 24%, 19%, 1) 27%, hsla(254, 31%, 27%, 1) 59%, hsla(295, 92%, 24%, 1) 94%);
+
+    background: -webkit-linear-gradient(135deg, hsla(233, 24%, 19%, 1) 27%, hsla(254, 31%, 27%, 1) 59%, hsla(295, 92%, 24%, 1) 94%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#25283D", endColorstr="#392F5A", GradientType=1 );
+}
+.bg-custom-gradient2{
+    background: hsla(0, 35%, 74%, 1);
+
+    background: radial-gradient(circle, hsla(0, 35%, 74%, 1) 0%, hsla(295, 92%, 24%, 1) 54%, hsla(233, 24%, 19%, 1) 91%);
+
+    background: -moz-radial-gradient(circle, hsla(0, 35%, 74%, 1) 0%, hsla(295, 92%, 24%, 1) 54%, hsla(233, 24%, 19%, 1) 91%);
+
+    background: -webkit-radial-gradient(circle, hsla(0, 35%, 74%, 1) 0%, hsla(295, 92%, 24%, 1) 54%, hsla(233, 24%, 19%, 1) 91%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D4A5A5", endColorstr="#6A0574", GradientType=1 );
+}
+
+.bg-custom-gradient3{
+    background: hsla(233, 24%, 19%, 1);
+
+    background: linear-gradient(315deg, hsla(233, 24%, 19%, 1) 0%, hsla(295, 92%, 24%, 1) 52%, hsla(307, 43%, 39%, 1) 100%);
+
+    background: -moz-linear-gradient(315deg, hsla(233, 24%, 19%, 1) 0%, hsla(295, 92%, 24%, 1) 52%, hsla(307, 43%, 39%, 1) 100%);
+
+    background: -webkit-linear-gradient(315deg, hsla(233, 24%, 19%, 1) 0%, hsla(295, 92%, 24%, 1) 52%, hsla(307, 43%, 39%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#25283D", endColorstr="#6A0574", GradientType=1 );
+}
+
+.bg-custom-gradient4{
+    background: hsla(233, 24%, 19%, 1);
+
+    background: linear-gradient(135deg, hsla(233, 24%, 19%, 1) 0%, hsla(295, 92%, 24%, 1) 52%, hsla(307, 43%, 39%, 1) 100%);
+
+    background: -moz-linear-gradient(135deg, hsla(233, 24%, 19%, 1) 0%, hsla(295, 92%, 24%, 1) 52%, hsla(307, 43%, 39%, 1) 100%);
+
+    background: -webkit-linear-gradient(135deg, hsla(233, 24%, 19%, 1) 0%, hsla(295, 92%, 24%, 1) 52%, hsla(307, 43%, 39%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#25283D", endColorstr="#6A0574", GradientType=1 );
+}
+
+.bg-custom-gradient5{
+    background: hsla(233, 24%, 19%, 1);
+
+    background: linear-gradient(225deg, hsla(233, 24%, 19%, 1) 0%, hsla(295, 92%, 24%, 1) 52%, hsla(307, 43%, 39%, 1) 100%);
+
+    background: -moz-linear-gradient(225deg, hsla(233, 24%, 19%, 1) 0%, hsla(295, 92%, 24%, 1) 52%, hsla(307, 43%, 39%, 1) 100%);
+
+    background: -webkit-linear-gradient(225deg, hsla(233, 24%, 19%, 1) 0%, hsla(295, 92%, 24%, 1) 52%, hsla(307, 43%, 39%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#25283D", endColorstr="#6A0574", GradientType=1 );
+}
+
+/* custom.css */
+.gradient-shadow {
+    position: relative;
+}
+
+.gradient-shadow::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    right: -30px;
+    bottom: -30px;
+    border-radius: inherit;
+    /*Aseguraquelasombrasigalaformadelcontenedor*/background: radial-gradient(circle,hsla(233, 24%, 19%, 0.5) 19%,hsla(295, 92%, 24%, 0.5) 50%,hsla(307, 43%, 39%, 0.5) 79%);
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    -ms-border-radius: inherit;
+    -o-border-radius: inherit;
+}
+
+
+/*  App */
+
+
+/* Boton animacion */
+.anime {
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+}
+.anime div {
+    width: 25px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #000000;
+    margin: 0 0 3px 0;
+    transition: 0.5s all;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.anime.active .line1 {
+    animation: animation-1 .7s cubic-bezier(0.3,1,0.7,1 ) forwards;
+}
+.line1  {
+    animation: animation-1-rev .7s ease-in-out;
+}
+.line2 {
+    animation: animation-2-rev .7s ease-in-out;
+}
+.anime.active .line2 {
+    animation: animation-2 .8s cubic-bezier(0.3,1,0.7,1 ) forwards;
+}
+.line3 {
+    animation: animation-3-rev .7s ease-in-out;
+}
+.anime.active .line3 {
+    animation: animation-3 .7s cubic-bezier(0.3,1,0.7,1 ) forwards;
+}
+.anime.stop-animation div {
+    animation: none;
+}
+@keyframes animation-1 {
+    0% {
+        transform: translate(0,0) rotate(0deg);
+    }
+    50% {
+        transform: translate(0,07px) rotate(0);
+        -webkit-transform: translate(0,07px) rotate(0);
+        -moz-transform: translate(0,07px) rotate(0);
+        -ms-transform: translate(0,07px) rotate(0);
+        -o-transform: translate(0,07px) rotate(0);
+    }
+    100% {
+        transform: translate(0,07px) rotate(45deg);
+        -webkit-transform: translate(0,07px) rotate(45deg);
+        -moz-transform: translate(0,07px) rotate(45deg);
+        -ms-transform: translate(0,07px) rotate(45deg);
+        -o-transform: translate(0,07px) rotate(45deg);
+    }
+}
+@keyframes animation-1-rev {
+    0% {
+        transform: translate(0,07px) rotate(45deg);
+        -webkit-transform: translate(0,07px) rotate(45deg);
+        -moz-transform: translate(0,07px) rotate(45deg);
+        -ms-transform: translate(0,07px) rotate(45deg);
+        -o-transform: translate(0,07px) rotate(45deg);
+    }
+    50% {
+        transform: translate(0,07px) rotate(0);
+        -webkit-transform: translate(0,07px) rotate(0);
+        -moz-transform: translate(0,07px) rotate(0);
+        -ms-transform: translate(0,07px) rotate(0);
+        -o-transform: translate(0,07px) rotate(0);
+    }
+    100%{
+        transform: translate(0,0) rotate(0);
+    }
+}
+@keyframes animation-2 {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+@keyframes animation-2-rev {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes animation-3{
+    0% {
+        transform: translate(0,0) rotate(0deg);
+    }
+    50% {
+        transform: translate(0,-18px) rotate(0);
+    }
+    100% {
+        transform: translate(0,-07px) rotate(-45deg);
+        -webkit-transform: translate(0,-07px) rotate(-45deg);
+        -moz-transform: translate(0,-07px) rotate(-45deg);
+        -ms-transform: translate(0,-07px) rotate(-45deg);
+        -o-transform: translate(0,-07px) rotate(-45deg);
+    }
+}
+@keyframes animation-3-rev{
+    0% {
+        transform: translate(0,-07px) rotate(-45deg);
+        -webkit-transform: translate(0,-07px) rotate(-45deg);
+        -moz-transform: translate(0,-07px) rotate(-45deg);
+        -ms-transform: translate(0,-07px) rotate(-45deg);
+        -o-transform: translate(0,-07px) rotate(-45deg);
+    }
+    50% {
+        transform: translate(0,-07px) rotate(0);
+        -webkit-transform: translate(0,-07px) rotate(0);
+        -moz-transform: translate(0,-07px) rotate(0);
+        -ms-transform: translate(0,-07px) rotate(0);
+        -o-transform: translate(0,-07px) rotate(0);
+    }
+    100% {
+        transform: translate(0,0) rotate(0deg);
+    }
+}
+
+/* Fin de boton animacion */
+
+.text-shadow-md {
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+    text-shadow: 2px 2px 4px #6A0574;
+}
+
+
+
+
+
