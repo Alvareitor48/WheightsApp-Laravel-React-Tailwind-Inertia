@@ -9,10 +9,17 @@ Route::get('/', function () {
     return Inertia::render('Home', [
         'canLogin' => Route::has('login'),
         'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
+        //'laravelVersion' => Application::VERSION,
+        //'phpVersion' => PHP_VERSION,
     ]);
-});
+})->name('home');
+
+Route::get('/AdminRoutines', function () {
+    return Inertia::render('AdminRoutines', [
+        //'canLogin' => Route::has('login'),
+        //'canRegister' => Route::has('register'),
+    ]);
+})->name('AdminRoutines');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
