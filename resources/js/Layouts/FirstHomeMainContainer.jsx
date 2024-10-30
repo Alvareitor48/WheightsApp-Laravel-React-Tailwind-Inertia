@@ -1,6 +1,6 @@
 import homeImage from '@/assets/images/HomeImage.png'
 import { motion } from 'framer-motion'
-import {Link} from "@inertiajs/react";
+import {Link, router} from "@inertiajs/react";
 export const FirstHomeMainContainer = () => {
     return (
         <div className='mt-8 relative flex flex-wrap justify-around'>
@@ -23,9 +23,9 @@ export const FirstHomeMainContainer = () => {
                     <motion.button
                         className="bg-lilaPrincipal pb-1 mt-10 w-responsive-first-button-width h-responsive-first-button-height text-responsive-h4 rounded-xl"
                         whileHover={{ backgroundColor: "#8F3985", scale: 1.1 }}
+                        onClick={() => router.visit(route('AdminRoutines'))}
                     >
-                        <Link href={route('AdminRoutines')}>Empezar</Link>
-
+                        Empezar
                     </motion.button>
                 </div>
 
