@@ -2,7 +2,6 @@ import React from 'react';
 import {motion} from "framer-motion";
 import {router} from "@inertiajs/react";
 import homeImage from '@/assets/images/HomeImage.png'
-
 export function PrincipalTable(props) {
     return (
         <>
@@ -26,14 +25,13 @@ export function PrincipalTable(props) {
                 Comenzar Rutina
             </motion.button>
 
-            <div className="border border-gray-300 border-b-0 bg-gray-800 grid grid-cols-4 items-center w-full justify-between mt-8">
+            <div className="border border-gray-300 border-b-0 rounded-t-xl bg-gray-800 grid grid-cols-4 items-center w-[90%] justify-between mt-8">
 
                 <div className="flex justify-center m-2">
-                    <img
-                        src={homeImage}
-                        alt="Ejercicio"
-                        className="h-responsive-height-table-image w-responsive-width-table-image rounded-full object-cover"
-                    />
+                    <div
+                        className="h-responsive-height-table-image w-responsive-width-table-image rounded-full bg-cover bg-center"
+                        style={{ backgroundImage: `url(${homeImage})`}}
+                    ></div>
                 </div>
 
                 {/* Título del Ejercicio */}
@@ -43,7 +41,7 @@ export function PrincipalTable(props) {
 
                 {/* Notas */}
                 <div className="text-center px-2 py-3">
-                    <p className="text-responsive-table text-gray-400 inline-block">Notas sobre el ejercicio</p>
+                    <p className="text-responsive-note-table text-gray-400 inline-block">Notas sobre el ejercicio</p>
                 </div>
 
                 {/* Temporizador (No funcional) */}
@@ -52,16 +50,16 @@ export function PrincipalTable(props) {
                 </div>
             </div>
 
-            <table className="bg-custom-gradient2 border border-gray-300 border-t-0 rounded-lg min-w-full">
+            <table className="text-responsive-table border-separate border-spacing-0 bg-custom-gradient2 border border-gray-300 border-t-0 rounded-b-xl w-[90%] ">
                 <thead>
-                <tr className="bg-gray-800 text-white uppercase text-responsive-table leading-normal">
+                <tr className="bg-gray-800 text-white uppercase leading-normal">
                     <th className="w-1/4 py-3 px-2 text-center">Serie</th>
                     <th className="w-1/4 py-3 px-2 text-center">Reps</th>
                     <th className="w-1/4 py-3 px-2 text-center">Peso</th>
                     <th className="w-1/4 py-3 px-2 text-center">RIR</th>
                 </tr>
                 </thead>
-                <tbody className="text-gray-700 text-responsive-table">
+                <tbody className="text-gray-700">
                 <tr className="border-b border-gray-200 hover:bg-gray-600">
                     <td className="py-3 px-2 text-center whitespace-nowrap">1</td>
                     <td className="py-3 px-2 text-center">6</td>

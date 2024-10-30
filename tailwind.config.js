@@ -2,6 +2,7 @@ import defaultTheme from 'tailwindcss/defaultTheme';
 import forms from '@tailwindcss/forms';
 
 /** @type {import('tailwindcss').Config} */
+
 export default {
     content: [
         './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
@@ -22,7 +23,8 @@ export default {
                 'responsive-h2': ['clamp(1.1em, 9.64vw, 4em)'],
                 'responsive-h4': ['clamp(0.5em,5vw, 1.5em)'],
                 'responsive-ul': ['clamp(1em,5vw, 2.5em)'],
-                'responsive-table':['clamp(0.6em,3vw, 1.5em)']
+                'responsive-table':['clamp(0.12em,3.5vw, 1.5em)'],
+                'responsive-note-table':['clamp(0.2em,2vw, 1em)'],
             },
             width:{
                 'responsive-width': ['clamp(16em, 90vw, 40em)'],
