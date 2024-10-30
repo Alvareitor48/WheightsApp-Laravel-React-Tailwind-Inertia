@@ -5,84 +5,79 @@ import homeImage from '@/assets/images/HomeImage.png'
 export function PrincipalTable(props) {
     return (
         <>
-        <div className="bg-transparent flex flex-col items-center min-h-screen text-white">
-            {/* Título y usuario */}
-            <div className="text-center mb-4">
-                <h1 className="text-responsive-h2 font-semibold">Hombro-Biceps-Triceps</h1>
-                <p className="text-gray-400 text-responsive-h4 my-4 mx-8">Lorem ipsum dolor sit amet, consectetur
-                    adipisicing
-                    elit. Animi consectetur dicta dolore ducimus nemo, nihil odio quibusdam. Aspernatur atque beatae
-                    illo in quos reprehenderit saepe! Aliquid animi earum non quisquam.</p>
-                <span className="text-gray-200 text-responsive-h4 font-semibold my-4">Created by alvareitor48</span>
-            </div>
+            <div className="m-auto w-[90%] mt-6 mb-6">
 
-            {/* Botón de Comenzar Rutina*/}
-            <motion.button
-                className="bg-lilaPrincipal pb-1 mt-10 w-responsive-normal-button-width h-responsive-normal-button-height text-responsive-h4 rounded-xl"
-                whileHover={{backgroundColor: "#8F3985", scale: 1.1}}
-                onClick={() => router.visit(route('AdminRoutines'))}
-            >
-                Comenzar Rutina
-            </motion.button>
+                <div
+                    className="border border-gray-300 border-b-0 rounded-t-xl glasstop grid grid-cols-4 items-center justify-between mt-8 mb-1">
 
-            <div className="border border-gray-300 border-b-0 rounded-t-xl bg-gray-800 grid grid-cols-4 items-center w-[90%] justify-between mt-8">
+                    <div className="flex justify-center m-1">
+                        <div
+                            className="h-responsive-height-table-image w-responsive-width-table-image rounded-full bg-cover bg-center"
+                            style={{backgroundImage: `url(${homeImage})`}}
+                        ></div>
+                    </div>
 
-                <div className="flex justify-center m-2">
-                    <div
-                        className="h-responsive-height-table-image w-responsive-width-table-image rounded-full bg-cover bg-center"
-                        style={{ backgroundImage: `url(${homeImage})`}}
-                    ></div>
+                    {/* Título del Ejercicio */}
+                    <div className="text-center px-2 py-3">
+                        <h2 className="text-responsive-table font-semibold inline-block">Press inclinado con
+                            mancuernas</h2>
+                    </div>
+
+                    {/* Notas */}
+                    <div className="text-center px-2 py-3">
+                        <p className="text-responsive-note-table text-gray-400 inline-block"> Informacion varia que
+                            luego podremos usar la verdad</p>
+                    </div>
+
+                    {/* Temporizador (No funcional) */}
+                    <div className="text-center px-2 py-3">
+                        <p className="text-responsive-table font-medium text-gray-400 inline-block">03:00</p>
+                    </div>
                 </div>
 
-                {/* Título del Ejercicio */}
-                <div className="text-center px-2 py-3">
-                    <h2 className="text-responsive-table font-semibold inline-block">Título del Ejercicio</h2>
+                <table
+                    className="text-responsive-table border-separate border-spacing-0 glassbottom border border-gray-300 border-t-0 rounded-b-xl w-full">
+                    <thead>
+                    <tr className="text-white uppercase leading-normal">
+                        <th className="w-1/4 py-3 px-2 text-center">Serie</th>
+                        <th className="w-1/4 py-3 px-2 text-center">Reps</th>
+                        <th className="w-1/4 py-3 px-2 text-center">Peso</th>
+                        <th className="w-1/4 py-3 px-2 text-center">RIR</th>
+                    </tr>
+                    </thead>
+                    <tbody className="text-gray-700">
+                    <tr className="border-b border-gray-200 hover:bg-gray-600">
+                        <td className="py-3 px-2 text-center whitespace-nowrap">1</td>
+                        <td className="py-3 px-2 text-center">6</td>
+                        <td className="py-3 px-2 text-center">22.5</td>
+                        <td className="py-3 px-2 text-center">1</td>
+                    </tr>
+                    <tr className="border-b border-gray-200 hover:bg-gray-600">
+                        <td className="py-3 px-2 text-center whitespace-nowrap">2</td>
+                        <td className="py-3 px-2 text-center">6</td>
+                        <td className="py-3 px-2 text-center">22.5</td>
+                        <td className="py-3 px-2 text-center">1</td>
+                    </tr>
+                    <tr className="border-b border-gray-200 hover:bg-gray-600">
+                        <td className="py-3 px-2 text-center whitespace-nowrap">3</td>
+                        <td className="py-3 px-2 text-center">6</td>
+                        <td className="py-3 px-2 text-center">22.5</td>
+                        <td className="py-3 px-2 text-center">1</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <motion.button
+                    className="glass pb-1 mt-5 w-full h-responsive-normal-button-height text-responsive-h4"
+                    whileHover={{scale: 1.1}}
+                    onClick={() => router.visit(route('AdminRoutines'))}
+                >
+                    + Añadir Serie
+                </motion.button>
+
                 </div>
 
-                {/* Notas */}
-                <div className="text-center px-2 py-3">
-                    <p className="text-responsive-note-table text-gray-400 inline-block">Notas sobre el ejercicio</p>
-                </div>
-
-                {/* Temporizador (No funcional) */}
-                <div className="text-center px-2 py-3">
-                    <p className="text-responsive-table font-medium text-gray-400 inline-block">00:00</p>
-                </div>
-            </div>
-
-            <table className="text-responsive-table border-separate border-spacing-0 bg-custom-gradient2 border border-gray-300 border-t-0 rounded-b-xl w-[90%] ">
-                <thead>
-                <tr className="bg-gray-800 text-white uppercase leading-normal">
-                    <th className="w-1/4 py-3 px-2 text-center">Serie</th>
-                    <th className="w-1/4 py-3 px-2 text-center">Reps</th>
-                    <th className="w-1/4 py-3 px-2 text-center">Peso</th>
-                    <th className="w-1/4 py-3 px-2 text-center">RIR</th>
-                </tr>
-                </thead>
-                <tbody className="text-gray-700">
-                <tr className="border-b border-gray-200 hover:bg-gray-600">
-                    <td className="py-3 px-2 text-center whitespace-nowrap">1</td>
-                    <td className="py-3 px-2 text-center">6</td>
-                    <td className="py-3 px-2 text-center">22.5</td>
-                    <td className="py-3 px-2 text-center">1</td>
-                </tr>
-                <tr className="border-b border-gray-200 hover:bg-gray-600">
-                    <td className="py-3 px-2 text-center whitespace-nowrap">1</td>
-                    <td className="py-3 px-2 text-center">6</td>
-                    <td className="py-3 px-2 text-center">22.5</td>
-                    <td className="py-3 px-2 text-center">1</td>
-                </tr>
-                <tr className="border-b border-gray-200 hover:bg-gray-600">
-                    <td className="py-3 px-2 text-center whitespace-nowrap">1</td>
-                    <td className="py-3 px-2 text-center">6</td>
-                    <td className="py-3 px-2 text-center">22.5</td>
-                    <td className="py-3 px-2 text-center">1</td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-
-    {/*
+            {/*
                 {/* Gráfica y filtros }
                 <div className="w-full max-w-md bg-gray-800 p-4 rounded-lg mb-4">
                     <div className="flex justify-between items-center">

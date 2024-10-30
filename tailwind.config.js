@@ -30,11 +30,11 @@ export default {
                 'responsive-width': ['clamp(16em, 90vw, 40em)'],
                 'responsive-first-button-width': ['clamp(8em, 16vw, 9em)'],
                 'responsive-normal-button-width': ['clamp(8em, 16vw, 9em)'],
-                'responsive-width-table-image': ['clamp(2em, 8vw, 5em)'],
+                'responsive-width-table-image': ['clamp(2em, 12vw, 6em)'],
             },
             height:{
                 'responsive-height-first-image': ['clamp(10em, 60vw, 30em)'],
-                'responsive-height-table-image': ['clamp(2em, 8vw, 5em)'],
+                'responsive-height-table-image': ['clamp(2em, 12vw, 6em)'],
                 'responsive-first-button-height': ['clamp(2.5em, 8vw, 3em)'],
                 'responsive-normal-button-height': ['clamp(3em, 8vw, 3em)'],
             },
