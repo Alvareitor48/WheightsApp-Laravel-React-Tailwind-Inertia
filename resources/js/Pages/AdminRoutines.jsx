@@ -1,13 +1,14 @@
 import {PrincipalTable} from "@/Components/PrincipalTable.jsx";
 import MainLayout from "@/Layouts/MainLayout.jsx";
 import {motion} from "framer-motion";
-import {router} from "@inertiajs/react";
+import {Head, router} from "@inertiajs/react";
 import homeImage from "@/assets/images/HomeImage.png";
 import React from "react";
 
 export default function AdminRoutines(){
     return(
         <MainLayout>
+            <Head title="Routines"/>
             <div className="bg-transparent flex flex-col items-center min-h-screen text-white">
                 {/* Título y usuario */}
                 <div className="text-center mb-4">

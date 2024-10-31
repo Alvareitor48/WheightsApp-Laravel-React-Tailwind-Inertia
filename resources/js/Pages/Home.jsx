@@ -2,9 +2,11 @@ import {MobileAndDesktopHomeContainer} from "@/Layouts/MobileAndDesktopContainer
 import {FirstHomeMainContainer} from "@/Layouts/FirstHomeMainContainer.jsx";
 import {FunctionsGrid} from "@/Layouts/FunctionsGrid.jsx";
 import MainLayout from "@/Layouts/MainLayout.jsx";
+import {Head} from "@inertiajs/react";
 export default function Home({ auth, laravelVersion, phpVersion }) {
     return (
             <MainLayout>
+                <Head title="Home" />
                 <FirstHomeMainContainer></FirstHomeMainContainer>
                 <MobileAndDesktopHomeContainer
                     Imageorientation={'left'}
