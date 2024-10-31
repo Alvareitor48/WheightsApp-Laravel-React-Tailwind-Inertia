@@ -105,141 +105,37 @@ html, body {
     -o-border-radius: inherit;
 }
 
+.glasstop{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.glassbottom{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.glass{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
 
 /*  App */
-
-
-/* Boton animacion */
-.anime {
-    display: inline-block;
-    cursor: pointer;
-    text-align: center;
-}
-.anime div {
-    width: 25px;
-    height: 4px;
-    border-radius: 5px;
-    background-color: #000000;
-    margin: 0 0 3px 0;
-    transition: 0.5s all;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-}
-.anime.active .line1 {
-    animation: animation-1 .7s cubic-bezier(0.3,1,0.7,1 ) forwards;
-}
-.line1  {
-    animation: animation-1-rev .7s ease-in-out;
-}
-.line2 {
-    animation: animation-2-rev .7s ease-in-out;
-}
-.anime.active .line2 {
-    animation: animation-2 .8s cubic-bezier(0.3,1,0.7,1 ) forwards;
-}
-.line3 {
-    animation: animation-3-rev .7s ease-in-out;
-}
-.anime.active .line3 {
-    animation: animation-3 .7s cubic-bezier(0.3,1,0.7,1 ) forwards;
-}
-.anime.stop-animation div {
-    animation: none;
-}
-@keyframes animation-1 {
-    0% {
-        transform: translate(0,0) rotate(0deg);
-    }
-    50% {
-        transform: translate(0,07px) rotate(0);
-        -webkit-transform: translate(0,07px) rotate(0);
-        -moz-transform: translate(0,07px) rotate(0);
-        -ms-transform: translate(0,07px) rotate(0);
-        -o-transform: translate(0,07px) rotate(0);
-    }
-    100% {
-        transform: translate(0,07px) rotate(45deg);
-        -webkit-transform: translate(0,07px) rotate(45deg);
-        -moz-transform: translate(0,07px) rotate(45deg);
-        -ms-transform: translate(0,07px) rotate(45deg);
-        -o-transform: translate(0,07px) rotate(45deg);
-    }
-}
-@keyframes animation-1-rev {
-    0% {
-        transform: translate(0,07px) rotate(45deg);
-        -webkit-transform: translate(0,07px) rotate(45deg);
-        -moz-transform: translate(0,07px) rotate(45deg);
-        -ms-transform: translate(0,07px) rotate(45deg);
-        -o-transform: translate(0,07px) rotate(45deg);
-    }
-    50% {
-        transform: translate(0,07px) rotate(0);
-        -webkit-transform: translate(0,07px) rotate(0);
-        -moz-transform: translate(0,07px) rotate(0);
-        -ms-transform: translate(0,07px) rotate(0);
-        -o-transform: translate(0,07px) rotate(0);
-    }
-    100%{
-        transform: translate(0,0) rotate(0);
-    }
-}
-@keyframes animation-2 {
-    0% {
-        transform: scale(1);
-        opacity: 1;
-    }
-    100% {
-        transform: scale(0);
-        opacity: 0;
-    }
-}
-@keyframes animation-2-rev {
-    0% {
-        transform: scale(0);
-        opacity: 0;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-@keyframes animation-3{
-    0% {
-        transform: translate(0,0) rotate(0deg);
-    }
-    50% {
-        transform: translate(0,-18px) rotate(0);
-    }
-    100% {
-        transform: translate(0,-07px) rotate(-45deg);
-        -webkit-transform: translate(0,-07px) rotate(-45deg);
-        -moz-transform: translate(0,-07px) rotate(-45deg);
-        -ms-transform: translate(0,-07px) rotate(-45deg);
-        -o-transform: translate(0,-07px) rotate(-45deg);
-    }
-}
-@keyframes animation-3-rev{
-    0% {
-        transform: translate(0,-07px) rotate(-45deg);
-        -webkit-transform: translate(0,-07px) rotate(-45deg);
-        -moz-transform: translate(0,-07px) rotate(-45deg);
-        -ms-transform: translate(0,-07px) rotate(-45deg);
-        -o-transform: translate(0,-07px) rotate(-45deg);
-    }
-    50% {
-        transform: translate(0,-07px) rotate(0);
-        -webkit-transform: translate(0,-07px) rotate(0);
-        -moz-transform: translate(0,-07px) rotate(0);
-        -ms-transform: translate(0,-07px) rotate(0);
-        -o-transform: translate(0,-07px) rotate(0);
-    }
-    100% {
-        transform: translate(0,0) rotate(0deg);
-    }
-}
 
 /* Fin de boton animacion */
 
