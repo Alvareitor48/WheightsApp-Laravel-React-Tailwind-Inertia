@@ -28,7 +28,7 @@ export const FunctionsGrid = () => {
             ></HomeGrid>
             <HomeGrid
                 classNameDiv='relative m-2 rounded-xl bg-custom-gradient4 col-start-3 col-end-4 row-start-1 row-end-3 custom-flex-wrap-first-title:col-start-1 custom-flex-wrap-first-title:col-end-3 custom-flex-wrap-first-title:row-start-3 custom-flex-wrap-first-title:row-end-4'
-                Img={<img className='h-[100%] m-auto' src={buscarRutina} alt='Buscar rutina'></img>}
+                Img={<img className='h-[100%] m-auto' src={buscarRutina} alt='Buscar rutina' draggable="false"></img>}
                 textH2='Busca la rutina perfecta'
                 textColorAndExtrasH2={'text-azulFondo absolute right-0 w-[100%] z-10'}
             ></HomeGrid>
@@ -39,6 +39,7 @@ export const FunctionsGrid = () => {
                                  src={(isHover ? tutorialesGif : tutorialesImg)}
                                  alt='Buscar rutina'
                                  transition={{ duration: 0.3 }}
+                                 draggable="false"
                 ></motion.img>}
                 textH2='Tutorial de ejercicios'
                 textColorAndExtrasH2={'absolute right-0 w-[100%] z-10'}

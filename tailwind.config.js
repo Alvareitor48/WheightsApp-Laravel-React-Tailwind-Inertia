@@ -16,7 +16,9 @@ export default {
             colors:{
                 "lilaPrincipal":"#6A0574",
                 "azulFondo":"#25283D",
-                "carne":"#D4A5A5"
+                "azulSecundario":"#392F5A",
+                "carne":"#D4A5A5",
+                "lilaSecundario":"#8F3985"
             },
             fontSize: {
                 'responsive-h1': ['clamp(1.5em, 11vw, 5em)'],

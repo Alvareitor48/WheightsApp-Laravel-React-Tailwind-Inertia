@@ -6,12 +6,11 @@ export default function MainLayout({ children,auth, laravelVersion, phpVersion }
 
     return (
         <>
+            <Head title="Home" />
             <div className='grid grid-rows-[auto,1fr,auto]'>
-                <Header></Header>
-                <main className='mt-14 p-2 bg-custom-gradient'>
+                <main className='p-2 bg-custom-gradient'>
                     {children}
                 </main>
-                <Footer></Footer>
             </div>
         </>
     );
