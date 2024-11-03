@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import {Link, router} from "@inertiajs/react";
 export const FirstHomeMainContainer = () => {
     return (
-        <div className='mt-8 relative flex flex-wrap justify-around'>
+        <div className='mt-8 pt-16 relative flex flex-wrap justify-around'>
             <motion.div className='w-responsive-width text-start custom-flex-wrap-first-title:text-center'
                         initial={{ opacity: 0, x: "-100%" }}
                         animate={{ opacity: 1, x: 0 }}
@@ -17,7 +17,7 @@ export const FirstHomeMainContainer = () => {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1 }}
             >
-                <img className='h-responsive-height-first-image rounded-full m-auto' src={homeImage} alt='People doing exercise'></img>
+                <img className='h-responsive-height-first-image rounded-full m-auto' src={homeImage} alt='People doing exercise' draggable="false"></img>
 
                 <div className="relative bottom-48 custom-flex-wrap-little-devices:bottom-28">
                     <motion.button

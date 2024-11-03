@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useState, useCallback } from "react";
 
 export const useIconAnimation = () => {
-    const [isActive, setActive] = useState(false);
-    const [isActive2, setActive2] = useState(false);
-    const iconAnime = () => {
-        setActive(true);
-        setActive2(!isActive2);
-    };
-    return { isActive, isActive2, iconAnime }
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMenu = useCallback(() => {
+        setIsOpen(prev => !prev);
+    }, []);
+
+    return { isOpen, toggleMenu };
 }
