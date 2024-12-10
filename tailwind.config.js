@@ -21,9 +21,9 @@ export default {
                 "lilaSecundario":"#8F3985"
             },
             fontSize: {
-                'responsive-h1': ['clamp(1.5em, 11vw, 5em)'],
+                'responsive-h1': ['clamp(1.3em, 9vw, 4.6em)'],
                 'responsive-h2': ['clamp(1.1em, 9.64vw, 4em)'],
-                'responsive-h4': ['clamp(0.5em,5vw, 1.5em)'],
+                'responsive-h4': ['clamp(0.5em,4vw, 1.5em)'],
                 'responsive-ul': ['clamp(1em,5vw, 2.5em)'],
                 'responsive-table':['clamp(0.12em,3.5vw, 1.5em)'],
                 'responsive-note-table':['clamp(0.2em,2vw, 1em)'],
@@ -35,7 +35,8 @@ export default {
                 'responsive-width-table-image': ['clamp(2em, 12vw, 6em)'],
             },
             height:{
-                'responsive-height-first-image': ['clamp(10em, 60vw, 30em)'],
+                'responsive-height-first-image': ['clamp(20em, 64vw, 45em)'],
+                'responsive-height-second-image': ['clamp(12em, 60vw, 34em)'],
                 'responsive-height-table-image': ['clamp(2em, 12vw, 6em)'],
                 'responsive-first-button-height': ['clamp(2.5em, 8vw, 3em)'],
                 'responsive-normal-button-height': ['clamp(3em, 8vw, 3em)'],

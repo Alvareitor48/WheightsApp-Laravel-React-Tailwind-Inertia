@@ -21,8 +21,8 @@ export const MobileAndDesktopHomeContainer = ({Imageorientation,title,li}) => {
                             once:true
                         }}
             >
-                <div className='bg-custom-gradient2 rounded-full p-9 relative'>
-                    <img className='h-responsive-height-first-image z-2' src={desktopAndMobile} alt='Desktop and mobile view' draggable="false"></img>
+                <div className='glassTintCircle p-9 relative'>
+                    <img className='h-responsive-height-second-image z-2 opacity-70' src={desktopAndMobile} alt='Desktop and mobile view' draggable="false"></img>
                 </div>
             </motion.div>
             <motion.div className={`-m-24 flex justify-center ${Imageorientation == 'left' ? 'col-start-2 col-end-3' : 'col-start-1 col-end-2'} row-start-2 row-end-3 custom-flex-wrap-first-title:row-start-3 custom-flex-wrap-first-title:row-end-4 custom-flex-wrap-first-title:col-start-1 custom-flex-wrap-first-title:col-end-2 custom-flex-wrap-first-title:mt-6`}

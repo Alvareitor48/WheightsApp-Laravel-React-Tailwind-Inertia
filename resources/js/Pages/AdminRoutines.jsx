@@ -13,10 +13,7 @@ export default function AdminRoutines(){
                 {/* Título y usuario */}
                 <div className="text-center mb-4">
                     <h1 className="text-responsive-h2 font-semibold">Hombro-Biceps-Triceps</h1>
-                    <p className="text-gray-400 text-responsive-h4 my-4 mx-8">Lorem ipsum dolor sit amet, consectetur
-                        adipisicing
-                        elit. Animi consectetur dicta dolore ducimus nemo, nihil odio quibusdam. Aspernatur atque beatae
-                        illo in quos reprehenderit saepe! Aliquid animi earum non quisquam.</p>
+                    <p className="text-gray-400 text-responsive-h4 my-4 mx-8">Frecuencia 2, alternar entre hacer primero hombro, biceps o triceps para maximizar hipertrofia</p>
                     <span className="text-gray-200 text-responsive-h4 font-semibold my-4">Created by alvareitor48</span>
                 </div>
 

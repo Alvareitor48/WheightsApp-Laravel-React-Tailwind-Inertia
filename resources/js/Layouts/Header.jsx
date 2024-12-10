@@ -9,14 +9,14 @@ export const Header = () => {
     const { isOpen, toggleMenu } = useIconAnimation();
 
     return (
-        <header className="p-2 bg-custom-gradient fixed flex justify-between items-center w-screen z-20">
+        <header className="p-2 bg-black fixed flex justify-between items-center w-screen z-20">
             <Link href={route('home')}>
                 <img className="h-11" src={logo} alt="Weights Technology Logo" draggable="false" />
             </Link>
             <HamburgerButton action={toggleMenu} isOpen={isOpen} />
             {isOpen && (
                 <motion.div
-                    className="absolute flex flex-col top-0 right-0 h-screen w-[230px] bg-custom-gradient shadow-lg z-20 pt-24"
+                    className="absolute flex flex-col top-0 right-0 h-screen w-[230px] glassTintWORadius z-20 pt-24"
                     initial={{width: 0}}
                     animate={{width: '250px'}}
                     exit={{width: 0}}
@@ -44,7 +44,7 @@ export const Header = () => {
                         Mi perfil
                     </Link>
                     <Link
-                        href={route('home')}
+                        href={route('AdminRoutines')}
                         className="block my-2 px-4 py-2 text-white hover:bg-lilaSecundario"
                     >
                         Diseñar rutina

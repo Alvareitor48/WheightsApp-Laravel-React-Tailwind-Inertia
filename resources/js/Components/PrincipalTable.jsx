@@ -1,4 +1,5 @@
 import React from 'react';
+import shoulder_press from '@/assets/images/shoulder_press.png'
 import {motion} from "framer-motion";
 import {router} from "@inertiajs/react";
 import homeImage from '@/assets/images/HomeImage.png'
@@ -13,7 +14,7 @@ export function PrincipalTable(props) {
                     <div className="flex justify-center m-1">
                         <div
                             className="h-responsive-height-table-image w-responsive-width-table-image rounded-full bg-cover bg-center"
-                            style={{backgroundImage: `url(${homeImage})`}}
+                            style={{backgroundImage: `url(${shoulder_press})`}}
                         ></div>
                     </div>
 
@@ -25,8 +26,7 @@ export function PrincipalTable(props) {
 
                     {/* Notas */}
                     <div className="text-center px-2 py-3">
-                        <p className="text-responsive-note-table text-gray-400 inline-block"> Informacion varia que
-                            luego podremos usar la verdad</p>
+                        <p className="text-responsive-note-table text-gray-400 inline-block"> Siempre al fallo</p>
                     </div>
 
                     {/* Temporizador (No funcional) */}
@@ -46,23 +46,29 @@ export function PrincipalTable(props) {
                     </tr>
                     </thead>
                     <tbody className="text-gray-700">
-                    <tr className="border-b border-gray-200 hover:bg-gray-600">
+                    <tr className="border-b border-gray-200 hover:bg-lilaPrincipal">
                         <td className="py-3 px-2 text-center whitespace-nowrap">1</td>
-                        <td className="py-3 px-2 text-center">6</td>
+                        <td className="py-3 px-2 text-center">9</td>
                         <td className="py-3 px-2 text-center">22.5</td>
-                        <td className="py-3 px-2 text-center">1</td>
+                        <td className="py-3 px-2 text-center">0</td>
                     </tr>
-                    <tr className="border-b border-gray-200 hover:bg-gray-600">
+                    <tr className="border-b border-gray-200 hover:bg-lilaPrincipal">
                         <td className="py-3 px-2 text-center whitespace-nowrap">2</td>
                         <td className="py-3 px-2 text-center">6</td>
                         <td className="py-3 px-2 text-center">22.5</td>
-                        <td className="py-3 px-2 text-center">1</td>
+                        <td className="py-3 px-2 text-center">F</td>
                     </tr>
-                    <tr className="border-b border-gray-200 hover:bg-gray-600">
+                    <tr className="border-b border-gray-200 hover:bg-lilaPrincipal">
                         <td className="py-3 px-2 text-center whitespace-nowrap">3</td>
-                        <td className="py-3 px-2 text-center">6</td>
-                        <td className="py-3 px-2 text-center">22.5</td>
-                        <td className="py-3 px-2 text-center">1</td>
+                        <td className="py-3 px-2 text-center">7</td>
+                        <td className="py-3 px-2 text-center">20</td>
+                        <td className="py-3 px-2 text-center">F</td>
+                    </tr>
+                    <tr className="border-b border-gray-200 hover:bg-lilaPrincipal">
+                        <td className="py-3 px-2 text-center whitespace-nowrap">4</td>
+                        <td className="py-3 px-2 text-center">5</td>
+                        <td className="py-3 px-2 text-center">20</td>
+                        <td className="py-3 px-2 text-center">F</td>
                     </tr>
                     </tbody>
                 </table>
@@ -75,7 +81,7 @@ export function PrincipalTable(props) {
                     + Añadir Serie
                 </motion.button>
 
-                </div>
+            </div>
 
             {/*
                 {/* Gráfica y filtros }

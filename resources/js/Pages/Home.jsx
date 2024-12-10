@@ -10,24 +10,24 @@ export default function Home({ auth, laravelVersion, phpVersion }) {
                 <FirstHomeMainContainer></FirstHomeMainContainer>
                 <MobileAndDesktopHomeContainer
                     Imageorientation={'left'}
-                    title={'Controla tus rutinas'}
+                    title={'CONTROLA TUS RUTINAS'}
                     li={<>
-                        <li>Registro de series y repes</li>
+                        <li>Registro de <span className="text-lilaPrincipal">series y repes</span></li>
                         <li>Control preciso del RIR</li>
-                        <li>Acceso rapido al historial</li>
+                        <li><span className="text-lilaPrincipal">Acceso rapido</span> al historial</li>
                         <li>Control de las cargas</li>
-                        <li>Monitoreo de descansos</li>
+                        <li>Monitoreo de <span className="text-lilaPrincipal">descansos</span></li>
                     </>}>
-                </MobileAndDesktopHomeContainer>
+            </MobileAndDesktopHomeContainer>
                 <MobileAndDesktopHomeContainer
                     Imageorientation={'right'}
-                    title={'Prioriza tus objetivos'}
+                    title={'PRIORIZA TUS OBJETIVOS'}
                     li={<>
-                        <li>Calcula tu repeticion maxima</li>
-                        <li>Conoce tus calorias necesarias</li>
-                        <li>Busca tu objetivo</li>
-                        <li>Rutinas personalizadas</li>
+                        <li className="text-lilaPrincipal">Rutinas personalizadas</li>
                         <li>Hechas por profesionales</li>
+                        <li>Conoce tus <span className="text-lilaPrincipal">calorias</span> necesarias</li>
+                        <li>Busca tu objetivo</li>
+                        <li>Calcula tu <span className="text-lilaPrincipal">repeticion maxima</span></li>
                     </>}>
                 </MobileAndDesktopHomeContainer>
                 <FunctionsGrid></FunctionsGrid>
