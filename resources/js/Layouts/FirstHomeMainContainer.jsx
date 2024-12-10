@@ -1,4 +1,4 @@
-import homeImage from '@/assets/images/HomeImage.png'
+import newHome from '@/assets/images/newHome.png'
 import { motion } from 'framer-motion'
 import {Link, router} from "@inertiajs/react";
 export const FirstHomeMainContainer = () => {
@@ -9,27 +9,15 @@ export const FirstHomeMainContainer = () => {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1 }}
             >
-                <h1 className='text-responsive-h1 inline-block leading-tight'>La web que mejora tus entrenamientos</h1>
-                <h4 className='text-responsive-h4 inline-block pt-8'>Maneja tu estilo de vida de la forma correcta con ayuda de expertos en el fitness</h4>
+                <h1 className='text-responsive-h1 inline-block text-start custom-flex-wrap-first-title:text-center'>LA WEB QUE <span className="text-lilaPrincipal">MEJORA</span> TUS ENTRENAMIENTOS</h1>
+                <h4 className='text-responsive-h4 inline-block pt-8 text-start custom-flex-wrap-first-title:text-center'>Maneja tu estilo de vida de la forma correcta con ayuda de expertos en el fitness</h4>
             </motion.div>
-            <motion.div className='relative py-8 w-responsive-width'
+            <motion.div className='m-2 relative py-8 w-responsive-width'
                         initial={{ opacity: 0, x: "100%" }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1 }}
             >
-                <img className='h-responsive-height-first-image rounded-full m-auto' src={homeImage} alt='People doing exercise' draggable="false"></img>
-
-                <div className="relative bottom-48 custom-flex-wrap-little-devices:bottom-28">
-                    <motion.button
-                        className="bg-lilaPrincipal pb-1 mt-10 w-responsive-first-button-width h-responsive-first-button-height text-responsive-h4 rounded-xl"
-                        whileHover={{ backgroundColor: "#8F3985", scale: 1.1 }}
-                        onClick={() => router.visit(route('AdminRoutines'))}
-                    >
-                        Empezar
-                    </motion.button>
-                </div>
-
-
+                <img className='opacity-70 mask-gradient h-responsive-height-first-image m-auto -my-20 custom-flex-wrap-first-title:my-0' src={newHome} alt='Healthy men' draggable="false"></img>
             </motion.div>
         </div>
     )
